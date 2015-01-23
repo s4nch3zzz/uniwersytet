@@ -15,12 +15,12 @@
         {% for entity in entities %}
             <tr>
                 <td>{{ loop.index }}.</td>
-===>            <td>{{ entity.name }}</td>
-===>            <td>
-===>                <a href="{{ path('admin_wydzial_show', { 'id': entity.id }) }}">
-===>                    {{ entity.nazwa }}
-===>                </a>
-===>            </td>
+            <td>{{ entity.name }}</td>
+           <td>
+               <a href="{{ path('admin_wydzial_show', { 'id': entity.id }) }}">
+                    {{ entity.nazwa }}
+               </a>
+           </td>
                 <td>
                 <ul>
                     <li>

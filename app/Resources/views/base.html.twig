@@ -9,6 +9,7 @@
     <body>
          <h1>Uniwersity Register</h1>
         {% block login_logout_panel %}
+            <nav>
             <ul>
                 <li>
                     <a href="{{ path('homepage') }}">
@@ -22,6 +23,11 @@
                             {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
                         </a>
                     </li>
+                     <li>
+                    <a href="{{ path('admin_wydzial') }}">
+                        pupils
+                   </a>
+                </li>
                 {% else %}
                     <li>
                         <a href="{{ path('fos_user_security_login') }}">
@@ -30,6 +36,7 @@
                     </li>
                 {% endif %}
             </ul>
+            </nav>
         {% endblock login_logout_panel %}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
